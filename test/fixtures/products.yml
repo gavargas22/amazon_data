@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  asin: MyString
+  seller_sku: MyString
+  order_item_id: MyString
+  title: MyString
+  quantity_ordered: 1
+  quantity_shipped: 1
+  gift_message_text: MyString
+  gift_wrap_level: MyString
+  item_price: 1.5
+  shipping_price: 1.5
+  gift_wrap_price: 1.5
+  item_tax: 1.5
+  shipping_tax: 1.5
+  gift_wrap_tax: 1.5
+  shipping_discount: 1.5
+  promotion_discount: 1.5
+  promotion_ids: MyString
+  cod_fee: MyString
+  cod_fee_discount: MyString
+  invoice_data: MyString
+  condition_id: MyString
+  condition_subtype_id: MyString
+  condition_note: MyString
+  scheduled_delivery_ends_at: 2016-06-27 22:45:12
+  scheduled_delivery_starts_at: 2016-06-27 22:45:12
+  customer_id: 
+
+two:
+  asin: MyString
+  seller_sku: MyString
+  order_item_id: MyString
+  title: MyString
+  quantity_ordered: 1
+  quantity_shipped: 1
+  gift_message_text: MyString
+  gift_wrap_level: MyString
+  item_price: 1.5
+  shipping_price: 1.5
+  gift_wrap_price: 1.5
+  item_tax: 1.5
+  shipping_tax: 1.5
+  gift_wrap_tax: 1.5
+  shipping_discount: 1.5
+  promotion_discount: 1.5
+  promotion_ids: MyString
+  cod_fee: MyString
+  cod_fee_discount: MyString
+  invoice_data: MyString
+  condition_id: MyString
+  condition_subtype_id: MyString
+  condition_note: MyString
+  scheduled_delivery_ends_at: 2016-06-27 22:45:12
+  scheduled_delivery_starts_at: 2016-06-27 22:45:12
+  customer_id: 

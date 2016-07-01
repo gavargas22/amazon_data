@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amazon_order_id: MyString
+  puchased_at: 2016-06-26 12:17:50
+  last_updated_at: 2016-06-26 12:17:50
+  status: MyString
+  fullfilment_channel: MyString
+  sales_channel: MyString
+  order_channel: MyString
+  ship_service_level: MyString
+  shipping_address_name: 
+  shipping_address_lines: MyString
+  address_name_city: MyString
+  shipping_address_state_or_region: MyString
+  shipping_address_postal_code: MyString
+  shipping_address_country_code: MyString
+  shipping_address_phone: MyString
+  total_sale_amount: MyString
+  number_of_items_shipped: 1
+  number_of_items_unshipped: 1
+  payment_execution_detail: MyString
+  payment_method: MyString
+  marketplace_id: MyString
+  buyer_name: MyString
+  buyer_email: MyString
+  shipment_service_level_category: MyString
+  cba_displayable_shipping_label: MyString
+  shipped_by_amazon_tfm: false
+  tfm_shipment_status: MyString
+  type: 
+  earliest_shipped_at: 2016-06-26 12:17:50
+  latest_shipped_at: 2016-06-26 12:17:50
+
+two:
+  amazon_order_id: MyString
+  puchased_at: 2016-06-26 12:17:50
+  last_updated_at: 2016-06-26 12:17:50
+  status: MyString
+  fullfilment_channel: MyString
+  sales_channel: MyString
+  order_channel: MyString
+  ship_service_level: MyString
+  shipping_address_name: 
+  shipping_address_lines: MyString
+  address_name_city: MyString
+  shipping_address_state_or_region: MyString
+  shipping_address_postal_code: MyString
+  shipping_address_country_code: MyString
+  shipping_address_phone: MyString
+  total_sale_amount: MyString
+  number_of_items_shipped: 1
+  number_of_items_unshipped: 1
+  payment_execution_detail: MyString
+  payment_method: MyString
+  marketplace_id: MyString
+  buyer_name: MyString
+  buyer_email: MyString
+  shipment_service_level_category: MyString
+  cba_displayable_shipping_label: MyString
+  shipped_by_amazon_tfm: false
+  tfm_shipment_status: MyString
+  type: 
+  earliest_shipped_at: 2016-06-26 12:17:50
+  latest_shipped_at: 2016-06-26 12:17:50

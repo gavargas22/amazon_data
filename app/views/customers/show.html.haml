@@ -1,0 +1,94 @@
+%p#notice= notice
+%p
+  %strong Amazon order:
+  = @customer.amazon_order_id
+%p
+  %strong Puchased at:
+  = @customer.puchased_at
+%p
+  %strong Last updated at:
+  = @customer.last_updated_at
+%p
+  %strong Status:
+  = @customer.status
+%p
+  %strong Fullfilment channel:
+  = @customer.fullfilment_channel
+%p
+  %strong Sales channel:
+  = @customer.sales_channel
+%p
+  %strong Order channel:
+  = @customer.order_channel
+%p
+  %strong Ship service level:
+  = @customer.ship_service_level
+%p
+  %strong Shipping address name:
+  = @customer.shipping_address_name
+%p
+  %strong Shipping address lines:
+  = @customer.shipping_address_lines
+%p
+  %strong Address name city:
+  = @customer.address_name_city
+%p
+  %strong Shipping address state or region:
+  = @customer.shipping_address_state_or_region
+%p
+  %strong Shipping address postal code:
+  = @customer.shipping_address_postal_code
+%p
+  %strong Shipping address country code:
+  = @customer.shipping_address_country_code
+%p
+  %strong Shipping address phone:
+  = @customer.shipping_address_phone
+%p
+  %strong Total sale amount:
+  = @customer.total_sale_amount
+%p
+  %strong Number of items shipped:
+  = @customer.number_of_items_shipped
+%p
+  %strong Number of items unshipped:
+  = @customer.number_of_items_unshipped
+%p
+  %strong Payment execution detail:
+  = @customer.payment_execution_detail
+%p
+  %strong Payment method:
+  = @customer.payment_method
+%p
+  %strong Marketplace:
+  = @customer.marketplace_id
+%p
+  %strong Buyer name:
+  = @customer.buyer_name
+%p
+  %strong Buyer email:
+  = @customer.buyer_email
+%p
+  %strong Shipment service level category:
+  = @customer.shipment_service_level_category
+%p
+  %strong Cba displayable shipping label:
+  = @customer.cba_displayable_shipping_label
+%p
+  %strong Shipped by amazon tfm:
+  = @customer.shipped_by_amazon_tfm
+%p
+  %strong Tfm shipment status:
+  = @customer.tfm_shipment_status
+%p
+  %strong Type:
+  = @customer.order_type
+%p
+  %strong Earliest shipped at:
+  = @customer.earliest_shipped_at
+%p
+  %strong Latest shipped at:
+  = @customer.latest_shipped_at
+= link_to 'Edit', edit_customer_path(@customer)
+|
+= link_to 'Back', customers_path

@@ -1,0 +1,71 @@
+%h1 Listing products
+
+%table
+  %thead
+    %tr
+      %th Asin
+      %th Seller sku
+      %th Order item
+      %th Title
+      %th Quantity ordered
+      %th Quantity shipped
+      %th Gift message text
+      %th Gift wrap level
+      %th Item price
+      %th Shipping price
+      %th Gift wrap price
+      %th Item tax
+      %th Shipping tax
+      %th Gift wrap tax
+      %th Shipping discount
+      %th Promotion discount
+      %th Promotion ids
+      %th Cod fee
+      %th Cod fee discount
+      %th Invoice data
+      %th Condition
+      %th Condition subtype
+      %th Condition note
+      %th Scheduled delivery ends at
+      %th Scheduled delivery starts at
+      %th Customer
+      %th
+      %th
+      %th
+
+  %tbody
+    - @products.each do |product|
+      %tr
+        %td= product.asin
+        %td= product.seller_sku
+        %td= product.order_item_id
+        %td= product.title
+        %td= product.quantity_ordered
+        %td= product.quantity_shipped
+        %td= product.gift_message_text
+        %td= product.gift_wrap_level
+        %td= product.item_price
+        %td= product.shipping_price
+        %td= product.gift_wrap_price
+        %td= product.item_tax
+        %td= product.shipping_tax
+        %td= product.gift_wrap_tax
+        %td= product.shipping_discount
+        %td= product.promotion_discount
+        %td= product.promotion_ids
+        %td= product.cod_fee
+        %td= product.cod_fee_discount
+        %td= product.invoice_data
+        %td= product.condition_id
+        %td= product.condition_subtype_id
+        %td= product.condition_note
+        %td= product.scheduled_delivery_ends_at
+        %td= product.scheduled_delivery_starts_at
+        %td= product.customer
+        %td= link_to 'Show', product
+        %td= link_to 'Edit', edit_product_path(product)
+        %td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Product', new_product_path

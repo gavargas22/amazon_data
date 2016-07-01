@@ -1,0 +1,88 @@
+= form_for @product do |f|
+  - if @product.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@product.errors.count, "error")} prohibited this product from being saved:"
+      %ul
+        - @product.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :asin
+    = f.text_field :asin
+  .field
+    = f.label :seller_sku
+    = f.text_field :seller_sku
+  .field
+    = f.label :order_item_id
+    = f.text_field :order_item_id
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :quantity_ordered
+    = f.number_field :quantity_ordered
+  .field
+    = f.label :quantity_shipped
+    = f.number_field :quantity_shipped
+  .field
+    = f.label :gift_message_text
+    = f.text_field :gift_message_text
+  .field
+    = f.label :gift_wrap_level
+    = f.text_field :gift_wrap_level
+  .field
+    = f.label :item_price
+    = f.text_field :item_price
+  .field
+    = f.label :shipping_price
+    = f.text_field :shipping_price
+  .field
+    = f.label :gift_wrap_price
+    = f.text_field :gift_wrap_price
+  .field
+    = f.label :item_tax
+    = f.text_field :item_tax
+  .field
+    = f.label :shipping_tax
+    = f.text_field :shipping_tax
+  .field
+    = f.label :gift_wrap_tax
+    = f.text_field :gift_wrap_tax
+  .field
+    = f.label :shipping_discount
+    = f.text_field :shipping_discount
+  .field
+    = f.label :promotion_discount
+    = f.text_field :promotion_discount
+  .field
+    = f.label :promotion_ids
+    = f.text_field :promotion_ids
+  .field
+    = f.label :cod_fee
+    = f.text_field :cod_fee
+  .field
+    = f.label :cod_fee_discount
+    = f.text_field :cod_fee_discount
+  .field
+    = f.label :invoice_data
+    = f.text_field :invoice_data
+  .field
+    = f.label :condition_id
+    = f.text_field :condition_id
+  .field
+    = f.label :condition_subtype_id
+    = f.text_field :condition_subtype_id
+  .field
+    = f.label :condition_note
+    = f.text_field :condition_note
+  .field
+    = f.label :scheduled_delivery_ends_at
+    = f.datetime_select :scheduled_delivery_ends_at
+  .field
+    = f.label :scheduled_delivery_starts_at
+    = f.datetime_select :scheduled_delivery_starts_at
+  .field
+    = f.label :customer
+    = f.text_field :customer
+  .actions
+    = f.submit 'Save'

@@ -1,0 +1,74 @@
+%p#notice= notice
+%h1 Listing Customers
+%table
+  %thead
+    %tr
+      %th Amazon order
+      %th Puchased at
+      %th Last updated at
+      %th Status
+      %th Fullfilment channel
+      %th Sales channel
+      %th Order channel
+      %th Ship service level
+      %th Shipping address name
+      %th Shipping address lines
+      %th Address name city
+      %th Shipping address state or region
+      %th Shipping address postal code
+      %th Shipping address country code
+      %th Shipping address phone
+      %th Total sale amount
+      %th Number of items shipped
+      %th Number of items unshipped
+      %th Payment execution detail
+      %th Payment method
+      %th Marketplace
+      %th Buyer name
+      %th Buyer email
+      %th Shipment service level category
+      %th Cba displayable shipping label
+      %th Shipped by amazon tfm
+      %th Tfm shipment status
+      %th Type
+      %th Earliest shipped at
+      %th Latest shipped at
+      %th{:colspan => "3"}
+  %tbody
+    - @customers.each do |customer|
+      %tr
+        %td= customer.amazon_order_id
+        %td= customer.puchased_at
+        %td= customer.last_updated_at
+        %td= customer.status
+        %td= customer.fullfilment_channel
+        %td= customer.sales_channel
+        %td= customer.order_channel
+        %td= customer.ship_service_level
+        %td= customer.shipping_address_name
+        %td= customer.shipping_address_lines
+        %td= customer.address_name_city
+        %td= customer.shipping_address_state_or_region
+        %td= customer.shipping_address_postal_code
+        %td= customer.shipping_address_country_code
+        %td= customer.shipping_address_phone
+        %td= customer.total_sale_amount
+        %td= customer.number_of_items_shipped
+        %td= customer.number_of_items_unshipped
+        %td= customer.payment_execution_detail
+        %td= customer.payment_method
+        %td= customer.marketplace_id
+        %td= customer.buyer_name
+        %td= customer.buyer_email
+        %td= customer.shipment_service_level_category
+        %td= customer.cba_displayable_shipping_label
+        %td= customer.shipped_by_amazon_tfm
+        %td= customer.tfm_shipment_status
+        %td= customer.order_type
+        %td= customer.earliest_shipped_at
+        %td= customer.latest_shipped_at
+        %td= link_to 'Show', customer
+        %td= link_to 'Edit', edit_customer_path(customer)
+        %td= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Customer', new_customer_path

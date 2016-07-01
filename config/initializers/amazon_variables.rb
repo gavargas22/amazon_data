@@ -1,0 +1,7 @@
+MWS_MARKETPLACE_ID='STRING'
+MWS_MERCHANT_ID='STRING'
+AWS_ACCESS_KEY_ID='STRING'
+AWS_SECRET_ACCESS_KEY='STRING'
+
+
+# client = MWS.orders(primary_marketplace_id: MWS_MARKETPLACE_ID, merchant_id: MWS_MERCHANT_ID, aws_access_key_id: AWS_ACCESS_KEY_ID, aws_secret_access_key: AWS_SECRET_ACCESS_KEY)

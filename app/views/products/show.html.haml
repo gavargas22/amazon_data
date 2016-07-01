@@ -1,0 +1,84 @@
+%p#notice= notice
+
+%p
+  %b Asin:
+  = @product.asin
+%p
+  %b Seller sku:
+  = @product.seller_sku
+%p
+  %b Order item:
+  = @product.order_item_id
+%p
+  %b Title:
+  = @product.title
+%p
+  %b Quantity ordered:
+  = @product.quantity_ordered
+%p
+  %b Quantity shipped:
+  = @product.quantity_shipped
+%p
+  %b Gift message text:
+  = @product.gift_message_text
+%p
+  %b Gift wrap level:
+  = @product.gift_wrap_level
+%p
+  %b Item price:
+  = @product.item_price
+%p
+  %b Shipping price:
+  = @product.shipping_price
+%p
+  %b Gift wrap price:
+  = @product.gift_wrap_price
+%p
+  %b Item tax:
+  = @product.item_tax
+%p
+  %b Shipping tax:
+  = @product.shipping_tax
+%p
+  %b Gift wrap tax:
+  = @product.gift_wrap_tax
+%p
+  %b Shipping discount:
+  = @product.shipping_discount
+%p
+  %b Promotion discount:
+  = @product.promotion_discount
+%p
+  %b Promotion ids:
+  = @product.promotion_ids
+%p
+  %b Cod fee:
+  = @product.cod_fee
+%p
+  %b Cod fee discount:
+  = @product.cod_fee_discount
+%p
+  %b Invoice data:
+  = @product.invoice_data
+%p
+  %b Condition:
+  = @product.condition_id
+%p
+  %b Condition subtype:
+  = @product.condition_subtype_id
+%p
+  %b Condition note:
+  = @product.condition_note
+%p
+  %b Scheduled delivery ends at:
+  = @product.scheduled_delivery_ends_at
+%p
+  %b Scheduled delivery starts at:
+  = @product.scheduled_delivery_starts_at
+%p
+  %b Customer:
+  = @product.customer
+
+= link_to 'Edit', edit_product_path(@product)
+\|
+= link_to 'Back', products_path
